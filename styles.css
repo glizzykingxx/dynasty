@@ -8,7 +8,8 @@ body {
     background-color: #8B4513; /* Kraft Brown */
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 3px; /* Reduce the padding to make it thinner */
+    font-size: 14px; /* Reduce the font size to make it thinner */
 }
 
 a {
@@ -20,7 +21,7 @@ header {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px; /* Increase padding for the header */
 }
 
 h1 {
@@ -31,7 +32,7 @@ nav {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px; /* Reduce the padding to make it thinner */
 }
 
 nav ul {
