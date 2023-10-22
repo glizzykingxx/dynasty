@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -29,12 +31,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-decoration: none; /* Remove underlines from links */
-    color: #333; /* Set link color */
+    text-decoration: none;
+    color: #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a slight box-shadow */
 }
 
 .section-box:hover {
     transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Enlarge with a slightly larger shadow on hover */
 }
 
 footer {
