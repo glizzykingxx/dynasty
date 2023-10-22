@@ -14,11 +14,26 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            position: relative; /* Make the body a positioning context for the pseudo-element */
+        }
+
+        /* Pseudo-element for the semi-transparent overlay */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (last value) as needed */
+            z-index: -1; /* Place it behind the content */
         }
 
         h1 {
             font-size: 4rem;
             text-align: center;
+            z-index: 1; /* Place it in front of the overlay */
+            color: #FFFFFF; /* Adjust the text color */
         }
 
         .button-container {
