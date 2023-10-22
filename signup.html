@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+</head>
+<body>
+    <h2>Signup</h2>
+    <form id="signupForm">
+        <input type="text" id="newUsername" placeholder="Username" required>
+        <input type="password" id="newPassword" placeholder="Password" required>
+        <button type="submit">Sign up</button>
+    </form>
+    <p>Already have an account? <a href="index.html">Login</a></p>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const newUsername = document.getElementById("newUsername").value;
+            const newPassword = document.getElementById("newPassword").value;
+            // You should send an HTTP request to the server to create a new user account.
+            // Backend code would typically handle user registration and database storage.
+        });
+    </script>
+</body>
+</html>
