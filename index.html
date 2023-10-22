@@ -1,39 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Dynasty STW</title>
+    <title>Login</title>
 </head>
 <body>
-    <div class="popup">
-        <p>Email <a href="mailto:seanvogler@tutanota.com">seanvogler@tutanota.com</a> to purchase this domain</p>
-    </div>
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
 
-    <header>
-        <h1>Qing Dynasty Memorial</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="aftereffects.html">After Effects</a></li>
-            <li><a href="about.html" id="about-link">About</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section>
-            <h2>End of the Qing Dynasty</h2>
-            <p>The Qing Dynasty came to an end in 1912, marking the end of more than two centuries of Qing rule. The dynasty fell due to various factors, including political, economic, and social issues, as well as external pressures from foreign powers.</p>
-        </section>
-
-        <section>
-            <h2>Key Information</h2>
-            <p>The Qing Dynasty, also known as the Manchu Dynasty, was the last imperial dynasty of China. It was founded in 1636 and ruled China until its downfall in 1912. The dynasty was characterized by its adoption of Manchu culture, the expansion of China's territory, and its involvement in various conflicts, such as the Opium Wars and the Boxer Rebellion.</p>
-        </section>
-    </main>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            // You should send an HTTP request to the server for authentication here.
+            // If authentication is successful, you can redirect to main.html.
+            // Example: window.location.href = "main.html";
+        });
+    </script>
 </body>
 </html>
