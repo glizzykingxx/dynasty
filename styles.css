@@ -51,3 +51,20 @@ footer {
     text-align: center;
     padding: 10px;
 }
+.section-box {
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-box:hover {
+    transform: scale(1.1);
+}
