@@ -35,6 +35,14 @@ nav {
     padding: 5px; /* Reduce the padding to make it thinner */
 }
 
+#about-link {
+    transition: transform 0.3s ease-in-out;
+}
+
+#about-link:hover {
+    transform: scale(1.2);
+}
+
 nav ul {
     list-style: none;
     padding: 0;
